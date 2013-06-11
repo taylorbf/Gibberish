@@ -16,7 +16,7 @@ m = new Gibberish.Sine( 5, 15 );	// sine wave, 5 Hz, 15 amplitude
 s.mod( 'frequency', m, '+' );		// modulate the frequency of sine s with the output of m
 
 d = new Gibberish.Delay(  s );      // create a delay effect and feed our sine wave into it
-r = new Gibberish.Reverb( r );      // create a reverb effect and feed our delay into it
+r = new Gibberish.Reverb( d );      // create a reverb effect and feed our delay into it
 r.connect();                        // connect reverb to default master output
 ```
 
